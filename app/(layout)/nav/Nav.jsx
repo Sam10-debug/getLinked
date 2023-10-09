@@ -15,9 +15,9 @@ const Nav=()=>{
                 <li className=""><Link href="/">Timeline</Link></li>
                 <li className=""><Link href="/">Overview</Link></li>
                 <li className=""><Link href="/">FAQs</Link></li>
-                <li className=""><Link href="/">Contact</Link></li>
+                <li className=""><Link href="/contact">Contact</Link></li>
             </ul>
-            <Button title='Register' />
+            <Link href="/register"><Button title='Register' /></Link>
         </nav>
         <div className="md:hidden">
             <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
