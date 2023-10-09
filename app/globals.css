@@ -28,7 +28,7 @@ header{
     ;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
     header{
         background-color: #150E28;
         backdrop-filter: initial;

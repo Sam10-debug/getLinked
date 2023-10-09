@@ -1,5 +1,8 @@
 "use client"
 import Image from "next/image"
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Button from "../(shared)/button/Button"
 import axios from "axios"
 import { useState } from "react"
@@ -36,12 +39,16 @@ const Register = () => {
 		}
     }
 
+    useEffect(() => {
+        AOS.init();
+      }, [])
+
   return (
     <section className="mt-24 space-y-12 md:mt-48 flex flex-col md:flex-row md:px-8  pb-12">
-        <div className=" flex-1 flex justify-center items-center">
+        <div data-aos="flip-right" data-aos-duration="1000" className=" flex-1 flex justify-center items-center">
             <Image src='/images/3d-graphic-designer-showing-thumbs-up-png 1.png' alt='3D image of graphics designer showing thumbs up' width={500} height={200} />
         </div>
-        <form className=" rounded-[12px] form shadow-2xl p-8 flex-1 max-h-[740px]">
+        <form data-aos="fade-right" data-aos-duration="1000" className=" rounded-[12px] form shadow-2xl p-8 flex-1 max-h-[740px]">
             <h2 className="text-[24px] md:text-[32px] mb-8 font-bold text-buttonGradient2">Register</h2>
             <p className="text-[14px] text-white my-2 font-bold ">Be part of this movement!</p>
             <h2 className="text-[20px] mb-4 md:text-[24px] font-bold text-white">CREATE YOUR ACCOUNT</h2>
