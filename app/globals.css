@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,6 +15,7 @@ header{
     right: 0;
     height: 50px;
     backdrop-filter: blur(7px);
+    z-index: 999;
 }
 .padlock{
     background-image: url('/images/Vector.svg');
@@ -34,11 +34,16 @@ header{
         backdrop-filter: initial;
     }
     nav{
-        background-color: red;
+        background-color: #150E28;
         position: fixed;
         top: 50px;
         left: 100%;
         right: 0;
         bottom: 0;
+        transition: all ease-in-out 1s;
+    }
+    .show-nav{
+        left:0;
+        transition: all ease-in-out 1s;
     }
 }
