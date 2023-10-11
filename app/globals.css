@@ -27,6 +27,22 @@ header{
     background-color: RGB(51, 44, 70)
     ;
 }
+.img-div{
+    width: 80%;
+    height: 560px;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .img-div{
+        width: 90%;
+        height: 300px;
+    }
+  }
+  @media screen and (max-width: 599px) {
+    .img-div{
+        width: 90%;
+        height: 148px;
+    }
+  }
 
 @media screen and (max-width:1024px){
     header{
@@ -47,3 +63,14 @@ header{
         transition: all ease-in-out 1s;
     }
 }
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+    nav{
+        background-color: inherit;
+        position: static;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: all ease-in-out 1s;
+    }
+  }

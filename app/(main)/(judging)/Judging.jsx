@@ -14,7 +14,7 @@ const Judging=()=>{
       }, [])
     return(
         <section className=" flex flex-col lg:flex-row">
-            <div data-aos="zoom-in-down" data-aos-duration="1000" className=' flex-1'>
+            <div data-aos="zoom-in-down" data-aos-duration="1000" className=' flex-1 flex justify-center items-center'>
             <Image src='/images/8046554 1.png' alt='a cartoon image of a  woman holding a pie cart and a man holding a book' width={500} height={200} />
             </div>
             <div data-aos="zoom-in-right" data-aos-duration="1000" className=" flex-1 text-center px-8 lg:text-left space-y-4">

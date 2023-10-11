@@ -1,7 +1,7 @@
 import Container from "./(main)/container/Container";
 
 //CHECK FOR SCREENS EXACTLY 768PX AND SLIGHTLKY ABOVE THAT, BETWEEN 768 TO 1024
-//ADD ANIMATION TO REGISTER AND CONTACT PAGE
+//FOR SCREENS EXACTLLY 1024PX
 
 export default function Home() {
   return (

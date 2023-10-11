@@ -5,6 +5,9 @@ import 'aos/dist/aos.css';
 import Button from "../(shared)/button/Button"
 
 const Contact = () => {
+    const handleClick=(e)=>{
+        e.preventDefault()
+    }
 
     useEffect(() => {
         AOS.init();
@@ -27,7 +30,7 @@ const Contact = () => {
                 <input type="name" placeholder="First Name" className=" w-full md:w-[437px] h-[47px] p-2 border-[1px] border-white rounded-[4px]" />
                 <input type="email" placeholder="Mail" className=" w-full md:w-[437px] h-[47px] p-2 border-[1px] border-white rounded-[4px]" />
                 <textarea placeholder="Message"  className="md:w-[437px] w-full  p-4 border-[1px] border-white rounded-[4px]" />
-                <div className=" flex justify-center"><Button title='Submit' /></div>
+                <div className=" flex justify-center"><Button handleClick={handleClick} title='Submit' /></div>
             </div>
         </form>
     </section>

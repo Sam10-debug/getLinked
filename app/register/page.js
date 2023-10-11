@@ -19,6 +19,10 @@ const Register = () => {
         group_size:''
 	})
 
+    const handleClick=(e)=>{
+        e.preventDefault()
+    }
+
     const handleChange=(e)=>{
 		const {name,value}=e.target
 		setFormData(prev=>{
@@ -88,7 +92,7 @@ const Register = () => {
             </select>
         </div>
             </section>
-            <div className=" flex justify-center py-4 md:py-8"><Button title='Register' /></div>
+            <div className=" flex justify-center py-4 md:py-8"><Button handleClick={handleClick} title='Register' /></div>
         </form>
     </section>
   )

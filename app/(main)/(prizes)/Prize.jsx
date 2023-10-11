@@ -20,7 +20,7 @@ const Prize = () => {
                 <div className="flex-1 flex justify-center items-center">
                     <Image src='/9486889 1.png' alt='image of a trophy' width={500} height={200} />
                 </div>
-                <div className="flex-1 flex items-center space-x-4">
+                <div className="flex-1 flex items-center space-x-4 justify-center">
                     <Medal style=' bg-purple-200 w-[90px] lg:w-[212px] border-buttonGradient1 border-2 rounded-[8px] h-[125px] lg:h-[296px] relative flex flex-col justify-end items-center' source='/images/silver_medal 1.png' altText='image of a silver medal' pos='2nd' money='N300,000' />
                     <Medal style=' bg-purple-200 w-[90px] lg:w-[212px] border-buttonGradient1 border-2 rounded-[8px] h-[147px] lg:h-[347px] relative flex flex-col justify-end items-center' source='/images/gold_medal 1.png' altText='image of a gold medal' pos='1st' money='N400,000' />
                     <Medal style=' bg-purple-200 w-[90px] lg:w-[212px] border-buttonGradient1 border-2 rounded-[8px] h-[125px] lg:h-[296px] relative flex flex-col justify-end items-center' source='/images/bronze_medal 1.png' altText='image of a bronze medal' pos='3rd' money='N150,000' />
